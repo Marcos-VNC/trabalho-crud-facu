@@ -1,0 +1,258 @@
+{% extends 'crud/base.html' %}
+{% block body %}
+  <div class="content">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../../static/imgs/bg/bg_bebidas.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../../static/imgs/bg/bg_fundo_madeira_com_whisky.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../../static/imgs/bg/bg_bebidas2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Voltar</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Avançar</span>
+      </button>
+    </div>
+
+    <br />
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Bebidas famosas</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="
+              card card-cover
+              h-100
+              overflow-hidden
+              text-white
+              bg-dark
+              rounded-5
+              shadow-lg
+            "
+            style="
+              background-image: url('../../static/imgs/gin.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                O melhor Gin de Campinas
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <small>2022</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="
+              card card-cover
+              h-100
+              overflow-hidden
+              text-white
+              bg-dark
+              rounded-5
+              shadow-lg
+            "
+            style="
+              background-image: url('../../static/imgs/rum.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Que tal um rum?
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>2022</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="
+              card card-cover
+              h-100
+              overflow-hidden
+              text-white
+              bg-dark
+              rounded-5
+              shadow-lg
+            "
+            style="
+              /* background-image: url('../../static/imgs/cerveja.jpg'); */
+              background-image: url('../../static/imgs/cerveja.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Não pode faltar a classica cerveja!
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>2022</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="../../static/imgs/main_01.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Catalogo de bebidas</h1>
+          <p class="lead">
+            Caso você esteja procurando uma bebida para suas festas ou
+            celebrações, aqui você encontrará uma lista de alguns dos melhores
+            tipos de cerveja, vinho e destilados que você pode encontrar no
+            Brasil. A propósito, esta não é uma lista completa; Tenho certeza de
+            que existem muitos outros tipos de bebidas alcoólicas que não
+            listei.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              href="bebidas"
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2"
+              >Bebidas</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="../../static/imgs/main_02.png"
+        alt=""
+        width="80%"
+        height="40%"
+      />
+      <h1 class="display-5 fw-bold">Participe do evento</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Venha participar do nosso evento e tenha a chance de ganhar um
+          ingresso para o Rock in Rio! Você apenas tem que prencher um
+          formulario com suas informações, boa sorte!
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a
+            href="evento"
+            type="button"
+            class="btn btn-primary btn-lg px-4 gap-3"
+            >Ir para o formulario</a
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Endereço do bar</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">Reserve um dia para nos visitar!</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="local"
+              type="button"
+              class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+              >Local</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

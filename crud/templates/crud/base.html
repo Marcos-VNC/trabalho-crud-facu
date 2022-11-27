@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    </head>
+    <style>
+        .container header img {
+          margin-right: 25px;
+          width: 72px;
+          height: 72px;
+        }
+        .container header ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .container header ul li .nav-link {
+          color: #5b2a00;
+          font: bold;
+        }
+        .container header ul li .nav-link.active {
+          background-color: #ff9b2d;
+        }
+        .content .container .btn-outline-secondary {
+          color: #cb7721;
+          border-color: #cb7721;
+        }
+        .content .container .btn-outline-secondary:hover {
+          color: #fffae0;
+          background-color: #5b2a00;
+        }
+        .content .container .card-text {
+          color: #5b2a00 !important;
+          font-size: 22px;
+        }
+        .content .container .text-muted {
+          color: #cb7721 !important;
+          font-size: 18 px;
+        }
+        .content .toast-body {
+          color: #5b2a00;
+        }
+        .content .me-auto {
+          font-size: 18px;
+          color: #ff9b2d;
+        } /*# sourceMappingURL=bebidas.css.map */
+
+        .content .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, 0.1);
+          border: solid rgba(0, 0, 0, 0.15);
+          border-width: 1px 0;
+          box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+            inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+        }
+        .content .carousel-item {
+          height: 70vh;
+        }
+        .content .carousel-item img {
+          height: 100%;
+        }
+        .content #custom-cards .pb-2 {
+          color: #ff9b2d;
+        }
+        .content #custom-cards .fw-bold {
+          color: #fffae0;
+        }
+        .content .btn-primary {
+          background-color: #ff9b2d;
+          border: none;
+        }
+        .content .btn-primary:hover {
+          background-color: #5b2a00;
+        } /*# sourceMappingURL=index.css.map */
+
+        .mapouter {
+          position: relative;
+          text-align: right;
+          width: 100%;
+          height: 700px;
+        }
+
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 700px;
+        }
+
+        .gmap_iframe {
+          height: 700px !important;
+        } /*# sourceMappingURL=local.css.map */
+    </style>
+<body>
+<div>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="
+            d-flex
+            align-items-center
+            mb-3 mb-md-0
+            me-md-auto
+            text-dark text-decoration-none
+          "
+        >
+
+          <span class="fs-1">Bar do João</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="../" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="bebidas" class="nav-link">Bebidas</a>
+          </li>
+          <li class="nav-item">
+            <a href="local" class="nav-link">Local</a>
+          </li>
+          <li class="nav-item">
+            <a href="evento" class="nav-link">Evento</a>
+          </li>
+          <li class="nav-item">
+            <a href="participantes" class="nav-link">Participantes</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    {% block body %}
+    {% endblock %}
+     <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">@Todos os direitos autorais reservados.</span>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    {% block script %}
+    {% endblock %}
+</script>
+</body>
+</html>
